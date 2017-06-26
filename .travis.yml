@@ -1,6 +1,5 @@
-dist: trusty
-language: java
-jdk:
-  - oraclejdk8
+language: scala
+scala:
+   - 2.12.1
 script:
   - sbt "run --dry-run --glue steps classpath:feature"
