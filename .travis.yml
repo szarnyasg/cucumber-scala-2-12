@@ -2,6 +2,7 @@ language: scala
 scala:
    - 2.11.0-M1
 script:
+  - mvn -version
   - git clone https://github.com/szarnyasg/cucumber-jvm
   - cd cucumber-jvm
   - git checkout scala-2.12-with-java-8
