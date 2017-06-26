@@ -1,4 +1,6 @@
-language: java
+language: scala
+scala:
+   - 2.11.0-M1
 script:
   - git clone --depth=1 https://github.com/szarnyasg/cucumber-jvm
   - cd cucumber-jvm
