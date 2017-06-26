@@ -2,7 +2,7 @@ language: scala
 scala:
    - 2.11.0-M1
 script:
-  - git clone -b scala-2.12-with-java-8 git@github.com:szarnyasg/cucumber-jvm.git
+  - git clone -b scala-2.12-with-java-8 https://github.com/szarnyasg/cucumber-jvm
   - cd cucumber-jvm
   - mvn -DskipTests -pl scala/scala_2.12 -am install
   - cd ..
