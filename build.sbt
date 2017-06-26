@@ -4,13 +4,13 @@ name := "cucumber-with-scala-2.12"
 
 version := "1.0"
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.0-M1"
 
 libraryDependencies ++= Seq(
-  "io.cucumber" %% "cucumber-scala" % "2.0.0-SNAPSHOT",
-  "org.scalatest" %% "scalatest" % "3.0.0"
+  "io.cucumber" % "cucumber-scala_2.12" % "2.0.0-SNAPSHOT",
+  "org.scalatest" % "scalatest_2.12" % "3.0.3"
 )
 
 mainClass in(Compile, run) := Some("cucumber.api.cli.Main")
 
-resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+resolvers += Resolver.mavenLocal
