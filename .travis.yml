@@ -6,8 +6,6 @@ script:
   - git clone https://github.com/szarnyasg/cucumber-jvm
   - cd cucumber-jvm
   - git checkout scala-2.12-with-java-8
-  - cd scala/scala_2.12
   - mvn -DskipTests install
-  - cd ../..
   - cd ..
   - sbt "run --dry-run --glue steps classpath:feature"
