@@ -4,7 +4,7 @@ name := "cucumber-with-scala-2.12"
 
 version := "1.0"
 
-scalaVersion := "2.12.0-M1"
+scalaVersion := "2.12.2"
 
 libraryDependencies ++= Seq(
   "io.cucumber" % "cucumber-scala_2.12" % "2.0.0-SNAPSHOT",
