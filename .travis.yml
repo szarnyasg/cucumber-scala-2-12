@@ -3,9 +3,4 @@ language: scala
 scala:
    - 2.12.2
 script:
-  - mvn -version
-  - git clone https://github.com/szarnyasg/cucumber-jvm
-  - cd cucumber-jvm
-  - mvn -DskipTests -pl scala/scala_2.12 -am install
-  - cd ..
   - sbt "run --dry-run --glue steps classpath:feature"

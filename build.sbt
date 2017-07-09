@@ -13,4 +13,5 @@ libraryDependencies ++= Seq(
 
 mainClass in(Compile, run) := Some("cucumber.api.cli.Main")
 
-resolvers += Resolver.mavenLocal
+resolvers += 
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
